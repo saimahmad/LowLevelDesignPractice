@@ -1,5 +1,10 @@
 ﻿namespace ObservableDesignPattern;
 
+/*
+ An example for observable design pattern where all the observers are notified when new
+ stocks of items comes up
+ */
+
 public interface IStockObservable
 {
     public void AddObservable(INotificationAlertObserver observer);
