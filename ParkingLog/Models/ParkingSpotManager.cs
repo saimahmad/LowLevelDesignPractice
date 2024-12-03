@@ -13,7 +13,8 @@ public class ParkingSpotManager
 
     public ParkingSpot? ParkVehicle(Vehicle vehicle)
     {
-        var parkingSpot = ParkingSpots.FirstOrDefault(p => p.IsEmpty());
+        var parkingSpot = ParkingSpots
+            .FirstOrDefault(p => p.IsEmpty() && p.CanVehicleBeParked(vehicle.Type));
 
         if (parkingSpot == null)
         {

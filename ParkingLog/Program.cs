@@ -11,9 +11,10 @@ internal class Program
 
         List<ParkingSpot> parkingSpots = [];
 
-        for(int i = 0; i < 2; i++)
+        for(int i = 0; i < 1; i++)
         {
-            parkingSpots.Add(new ParkingSpot("sp" + i));
+            parkingSpots.Add(new TwoWheelerSpot("tw" + i));
+            parkingSpots.Add(new FourWheelerSpot("fw" + i));
         }
 
         var parkingSpotManager = new ParkingSpotManager(parkingSpots);

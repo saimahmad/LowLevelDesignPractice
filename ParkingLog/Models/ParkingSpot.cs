@@ -1,6 +1,8 @@
-﻿namespace ParkingLot.Models;
+﻿using ParkingLot.Enums;
 
-public class ParkingSpot
+namespace ParkingLot.Models;
+
+public abstract class ParkingSpot
 {
     public ParkingSpot(string id)
     {
@@ -34,4 +36,5 @@ public class ParkingSpot
         VehicleParked = null;
     }
 
+    public abstract bool CanVehicleBeParked(VehicleType vehicleType);
 }
