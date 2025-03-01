@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorDesignPattern", ".
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryDesignPattern", "..\FactoryDesignPattern\FactoryDesignPattern.csproj", "{6C916B7B-1BAE-4C3D-91DE-63A21A45C9E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingLot", "..\ParkingLog\ParkingLot.csproj", "{EAFD356A-5ADA-47E4-BF95-CC78293206C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkingLot", "..\ParkingLog\ParkingLot.csproj", "{EAFD356A-5ADA-47E4-BF95-CC78293206C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorSystemDesign", "..\ElevatorSystemDesign\ElevatorSystemDesign.csproj", "{227EEA9C-C3B4-44BA-9960-23EF9FA2D2D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{EAFD356A-5ADA-47E4-BF95-CC78293206C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAFD356A-5ADA-47E4-BF95-CC78293206C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAFD356A-5ADA-47E4-BF95-CC78293206C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{227EEA9C-C3B4-44BA-9960-23EF9FA2D2D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{227EEA9C-C3B4-44BA-9960-23EF9FA2D2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{227EEA9C-C3B4-44BA-9960-23EF9FA2D2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{227EEA9C-C3B4-44BA-9960-23EF9FA2D2D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
