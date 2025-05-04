@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParkingLot", "..\ParkingLog
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorSystemDesign", "..\ElevatorSystemDesign\ElevatorSystemDesign.csproj", "{227EEA9C-C3B4-44BA-9960-23EF9FA2D2D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRentalSystem", "..\CarRentalSystem\CarRentalSystem.csproj", "{72AA3443-F511-4189-96EB-A2C25EA36016}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{227EEA9C-C3B4-44BA-9960-23EF9FA2D2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{227EEA9C-C3B4-44BA-9960-23EF9FA2D2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{227EEA9C-C3B4-44BA-9960-23EF9FA2D2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72AA3443-F511-4189-96EB-A2C25EA36016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72AA3443-F511-4189-96EB-A2C25EA36016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72AA3443-F511-4189-96EB-A2C25EA36016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72AA3443-F511-4189-96EB-A2C25EA36016}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
