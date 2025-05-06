@@ -13,14 +13,19 @@ internal class Program
         //in-memory databases
         var carManagers = PopulateCarManagerData();
         var users = PopulateUserData();
-
+        IPricingStrategy pricintStrategyGeneral = new GeneralPricingStrategy();
 
         //testing
         var carRentalService = new CarRentalService(carManagers, users);
 
         carRentalService.GetAvailableCars(DateTime.Now, DateTime.Now.AddYears(2), new Location() { Latitude = 0, Longitude = 0 });
         Console.WriteLine();
-        carRentalService.GetAvailableCars(DateTime.Now, DateTime.Now.AddYears(2), new Location() { Latitude = 19, Longitude = 19});
+        carRentalService.GetAvailableCars(DateTime.Now, DateTime.Now.AddYears(2), new Location() { Latitude = 19, Longitude = 19 });
+
+        var booking1 = carRentalService.BookCar(DateTime.Now, DateTime.Now.AddDays(2), carManagers[0].Id, "ab123", pricintStrategyGeneral);
+
+        PrintBookingDetails(booking1, carManagers);
+
     }
 
     static List<CarManager> PopulateCarManagerData()
@@ -75,5 +80,12 @@ internal class Program
                 EmailId = "asif@gmail.com"
             }
         };
+    }
+
+    static void PrintBookingDetails(UserBooking booking, List<CarManager> carManagers)
+    {
+        var carManager = carManagers.FirstOrDefault(_ => _.Id == booking.BookedCarManagerId);
+        Console.WriteLine("");
+        Console.WriteLine($"Booking done by user : {booking.UserId}, for the car: {carManager?.Car.Model}, total Amount to be paid : {booking.Bill.TotalAmount}");
     }
 }
